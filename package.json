@@ -1,0 +1,44 @@
+{
+  "name": "express-opentracing",
+  "version": "0.1.1",
+  "description": "opentracing middleware for express-js",
+  "main": "dist/index.js",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "./node_modules/.bin/babel src -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/opentracing-contrib/javascript-express.git"
+  },
+  "keywords": [
+    "tracing",
+    "opentracing",
+    "middleware"
+  ],
+  "author": "Clever",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/opentracing-contrib/javascript-express/issues"
+  },
+  "homepage": "https://github.com/opentracing-contrib/javascript-express#readme",
+  "dependencies": {
+    "opentracing": "^0.14.0"
+  },
+  "peerDependencies": {
+    "opentracing": "^0.14.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-preset-latest": "^6.16.0",
+    "express": "4.x.x",
+    "lightstep-tracer": "^0.20.3",
+    "mocha": "^3.2.0",
+    "request": "^2.79.0",
+    "sinon": "^1.17.7",
+    "underscore": "^1.8.3"
+  }
+}
